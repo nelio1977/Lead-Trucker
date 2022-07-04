@@ -1,0 +1,46 @@
+body {
+	min-width: 400px;
+	background: lightblue;
+}
+
+.url {
+	text-align: center;
+}
+
+input {
+	width: 100%;	
+	padding: 10px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	border: 1ps solid lightblue;
+}
+
+.container {
+	text-align: center;
+}
+
+.del-btn {
+	background: red;
+}
+
+button {
+	padding: 10px 20px;
+	background: #4287f5;
+	color: white;
+	border-radius: 5px;
+	border: 1px solid #4287f5;
+}
+
+#del {
+	background: white;
+	color: #4287f5;
+}
+
+h3 {
+	text-align: center;
+	color: #041e75;
+}
+
+ul {
+	list-style: none;
+}
