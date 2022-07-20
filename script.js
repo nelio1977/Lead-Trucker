@@ -28,20 +28,11 @@ delBtn.addEventListener("click", ()=> {
 
 })
 
-btnEl.addEventListener("click", ()=> {
-    if(inputEl.value) {
-    myLeads.push(inputEl.value)
-    inputEl.value= ""
-    localStorage.setItem("myLeads", JSON.stringify(myLeads))
-    render()
-    }
-})   
-   
 tabEl.addEventListener("click", ()=> {
 chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
     myLeads.push(tabs[0].url)
-    
-
+     localStorage.setItem("myLeads", JSON.stringify(myLeads))
+    render()
   });
 })
 
